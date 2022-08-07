@@ -1,0 +1,40 @@
+Get http://localhost:3000/api/users/admin/managers
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXIiOnsiaWQiOiI2MmVmMTE0NTUyNTExYWQ0ZGUwMGRmY2IifSwiaWF0IjoxNjU5ODM0Njk0LCJleHAiOjE2NjAxOTQ2OTR9.h7IH9lIJgYTiHEYUDGxddWT__lXvojvJcH-jwG6HzXg
+
+###
+
+POST http://localhost:3000/api/users/admin/
+Content-Type: application/json
+
+{
+    "adminId": 1234,
+    "email": "first@gmail.com",
+    "password":"123456",
+    "name": "Solo"
+}
+
+###
+
+
+POST http://localhost:3000/api/users/admin/menu
+Content-Type: application/json
+
+{
+    "menu_type": "Special",
+    "menu_items": [{"name":"rice", "price":40},{"name":"salad","price":50}]
+}
+
+###
+
+POST http://localhost:3000/api/users/customer/
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password":"123456",
+    "name": "Solomon"
+}
+
+
+###
+
