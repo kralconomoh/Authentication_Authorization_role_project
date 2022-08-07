@@ -1,0 +1,64 @@
+#User http://localhost:3000/api/users/customer/
+
+### Register
+
+POST http://localhost:3000/api/users/customer/register
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVXNlciI6eyJpZCI6IjYyZWYyNDNjYWFkZjgyNmE2MTg5ZmUxZiIsImVtYWlsIjoidXNlckBnbWFpbC5jb20ifSwiaWF0IjoxNjU5ODcxODI2LCJleHAiOjE2NjAyMzE4MjZ9.hWpMuVnUpPRJKi7BwIg8xQ04AtsIYD18pYg0tpT91e4
+Content-Type: application/json
+
+{
+    "email": "newuser@gmail.com",
+    "password":"123456",
+    "name": "Solomon"
+}
+
+
+### Login
+
+POST  http://localhost:3000/api/users/customer/login
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password":"123456"
+}
+
+
+### get Logged in User Info
+get  http://localhost:3000/api/users/customer/info
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVXNlciI6eyJpZCI6IjYyZWYyNDNjYWFkZjgyNmE2MTg5ZmUxZiIsImVtYWlsIjoidXNlckBnbWFpbC5jb20ifSwiaWF0IjoxNjU5ODcxODI2LCJleHAiOjE2NjAyMzE4MjZ9.hWpMuVnUpPRJKi7BwIg8xQ04AtsIYD18pYg0tpT91e4
+
+
+### Reset Password
+PUT  http://localhost:3000/api/users/customer/reset-password/
+Content-Type: application/json
+
+{
+    "email": "newuser@gmail.com",
+    "password": "password"
+}
+
+
+### Get all user orders
+
+get  http://localhost:3000/api/users/customer/order
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVXNlciI6eyJpZCI6IjYyZWYyNDNjYWFkZjgyNmE2MTg5ZmUxZiIsImVtYWlsIjoidXNlckBnbWFpbC5jb20ifSwiaWF0IjoxNjU5ODcxODI2LCJleHAiOjE2NjAyMzE4MjZ9.hWpMuVnUpPRJKi7BwIg8xQ04AtsIYD18pYg0tpT91e4
+
+### Get Menu
+
+get  http://localhost:3000/api/menus
+
+### Get a Menu Item
+
+get  http://localhost:3000/api/menus/62ef2884f949bb48e3772ff4
+
+### Create an order
+
+POST  http://localhost:3000/api/users/customer/orders/
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVXNlciI6eyJpZCI6IjYyZWYyNDNjYWFkZjgyNmE2MTg5ZmUxZiIsImVtYWlsIjoidXNlckBnbWFpbC5jb20ifSwiaWF0IjoxNjU5ODcxODI2LCJleHAiOjE2NjAyMzE4MjZ9.hWpMuVnUpPRJKi7BwIg8xQ04AtsIYD18pYg0tpT91e4
+Content-Type: application/json
+
+{
+    "mealname": "rice",
+    "menu_type": "Special"
+}

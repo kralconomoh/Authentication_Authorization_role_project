@@ -25,6 +25,11 @@ const ManagerSchema = mongoose.Schema({
         type: Boolean,
         default: false
     },
+        
+    type: {
+        type: String,
+        default: 'isManager'
+    }
 
     // isManager: {
     //     type: Boolean,

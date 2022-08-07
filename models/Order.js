@@ -21,6 +21,10 @@ const OrderSchema = mongoose.Schema({
         type: Boolean,
         default:true
     },
+    takenBy: {
+        type: String,
+        default: 'No One'
+    },
 },{ timestamps: true });
 
 module.exports = mongoose.model('Order', OrderSchema);

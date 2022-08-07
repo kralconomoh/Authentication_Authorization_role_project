@@ -19,23 +19,11 @@
      try {
          const decoded = jwt.verify(token, process.env.jwtSecret);
          
-         // Admin user model
-         // Check if user is admin
-         // If admin ... return req.adminUser
-         // else 
-         // err - user not an admin
  
          // Assign user to request object
          req.staffUser = decoded.staffUser;
  
  
-         // if (token && req.adminUser === undefined) {
-         //     console.log(req.adminUser)
-         //     return res.status(401).json({ msg: 'Unauthorised User' });
-         // } 
-         
- 
-         // console.log(req);
  
          
  

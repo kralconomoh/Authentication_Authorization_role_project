@@ -1,0 +1,76 @@
+#Manager http://localhost:3000/api/users/manager/
+
+### Register
+
+POST http://localhost:3000/api/users/manager/register
+Content-Type: application/json
+
+{
+    "email": "manager@gmail.com",
+    "password":"123456",
+    "name": "SoloManager"
+}
+
+
+### Login
+
+POST  http://localhost:3000/api/users/manager/login
+Content-Type: application/json
+
+{
+    "email": "manager@gmail.com",
+    "password":"123456"
+}
+
+
+### get Logged in User Info
+
+get  http://localhost:3000/api/users/manager/info
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW5hZ2VyVXNlciI6eyJpZCI6IjYyZWYyZjY3N2I3MDM5Mjk4NTYwNWQyMyJ9LCJpYXQiOjE2NTk4NzIxNzQsImV4cCI6MTY2MDIzMjE3NH0.brU0A6HOb5BImW2yNi6twX3tVfNxhjsNxC1qEyvlE6A
+
+
+### Get all staffs
+
+get  http://localhost:3000/api/users/manager/staffs
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW5hZ2VyVXNlciI6eyJpZCI6IjYyZWYyZjY3N2I3MDM5Mjk4NTYwNWQyMyJ9LCJpYXQiOjE2NTk4NzIxNzQsImV4cCI6MTY2MDIzMjE3NH0.brU0A6HOb5BImW2yNi6twX3tVfNxhjsNxC1qEyvlE6A
+
+### Get a staff
+
+get  http://localhost:3000/api/users/manager/staffs/62efa9f6e933dd4d11659215
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW5hZ2VyVXNlciI6eyJpZCI6IjYyZWYyZjY3N2I3MDM5Mjk4NTYwNWQyMyJ9LCJpYXQiOjE2NTk4NzIxNzQsImV4cCI6MTY2MDIzMjE3NH0.brU0A6HOb5BImW2yNi6twX3tVfNxhjsNxC1qEyvlE6A
+
+### Modify a staff
+
+PUT http://localhost:3000/api/users/manager/staffs/
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW5hZ2VyVXNlciI6eyJpZCI6IjYyZWYyZjY3N2I3MDM5Mjk4NTYwNWQyMyJ9LCJpYXQiOjE2NTk4NzIxNzQsImV4cCI6MTY2MDIzMjE3NH0.brU0A6HOb5BImW2yNi6twX3tVfNxhjsNxC1qEyvlE6A
+
+### Get a Menu
+
+get  http://localhost:3000/api/menus/62ef2884f949bb48e3772ff4
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVXNlciI6eyJpZCI6IjYyZWYyNDNjYWFkZjgyNmE2MTg5ZmUxZiIsImVtYWlsIjoidXNlckBnbWFpbC5jb20ifSwiaWF0IjoxNjU5ODcxODI2LCJleHAiOjE2NjAyMzE4MjZ9.hWpMuVnUpPRJKi7BwIg8xQ04AtsIYD18pYg0tpT91e4
+
+### Get all order
+
+get  http://localhost:3000/api/users/manager/orders/
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW5hZ2VyVXNlciI6eyJpZCI6IjYyZWYyZjY3N2I3MDM5Mjk4NTYwNWQyMyJ9LCJpYXQiOjE2NTk4NzIxNzQsImV4cCI6MTY2MDIzMjE3NH0.brU0A6HOb5BImW2yNi6twX3tVfNxhjsNxC1qEyvlE6A
+
+### Get an order
+
+get http://localhost:3000/api/users/manager/orders/62efa1843ba2c9270cfb0bf3
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW5hZ2VyVXNlciI6eyJpZCI6IjYyZWYyZjY3N2I3MDM5Mjk4NTYwNWQyMyJ9LCJpYXQiOjE2NTk4NzIxNzQsImV4cCI6MTY2MDIzMjE3NH0.brU0A6HOb5BImW2yNi6twX3tVfNxhjsNxC1qEyvlE6A
+
+### Delete an order
+
+DELETE http://localhost:3000/api/users/manager/orders/62efa1e68876d5aedb0094b7
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW5hZ2VyVXNlciI6eyJpZCI6IjYyZWYyZjY3N2I3MDM5Mjk4NTYwNWQyMyJ9LCJpYXQiOjE2NTk4NzIxNzQsImV4cCI6MTY2MDIzMjE3NH0.brU0A6HOb5BImW2yNi6twX3tVfNxhjsNxC1qEyvlE6A
+Content-Type: application/json
+
+### Update an order
+
+PUT http://localhost:3000/api/users/manager/orders/62efa4d44ce9920bd25e4f0f
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYW5hZ2VyVXNlciI6eyJpZCI6IjYyZWYyZjY3N2I3MDM5Mjk4NTYwNWQyMyJ9LCJpYXQiOjE2NTk4NzIxNzQsImV4cCI6MTY2MDIzMjE3NH0.brU0A6HOb5BImW2yNi6twX3tVfNxhjsNxC1qEyvlE6A
+Content-Type: application/json
+
+{
+    "mealname":"Hot Jollof rice"
+}

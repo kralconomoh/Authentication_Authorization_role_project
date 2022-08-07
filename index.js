@@ -14,11 +14,17 @@ app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.json({ msg: 'Hello world!'}));
 
+// app.use((req, res) => {
+//     req.userUser = {}
+// })
 
 app.use('/api/users/admin', require('./routes/adminUsers'));
 app.use('/api/users/manager', require('./routes/manager'));
 app.use('/api/users/staff', require('./routes/staff'));
 app.use('/api/users/customer', require('./routes/user'));
+
+app.use('/api/menus', require('./routes/menu'));
+app.use('/api/orders', require('./routes/order'));
 
 
 

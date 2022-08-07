@@ -24,7 +24,13 @@ const StaffSchema = mongoose.Schema({
     isManager: {
         type: Boolean,
         default: false
+    },
+        
+    type: {
+        type: String,
+        default: 'isStaff'
     }
+
 
     // isManager: {
     //     type: Boolean,
